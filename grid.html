@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+
+            /* grid-template-columns: repeat(2, 200px) 100px 150px; */
+
+            /* grid-template-columns: repeat(3, 1fr) 2fr; */
+
+            /* grid-template-columns: 100px 100px auto; */
+            grid-template-columns: 100px 100px;
+            justify-content:space-between;
+        }
+        .item{
+            border: 1px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>exploregrid layout: 2d layout</h2>
+    <div class="container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+    </div>
+</body>
+</html>
